@@ -1,10 +1,8 @@
 {
   "name": "@adobe/generator-app-aem-react",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
+  "description": "Template for AEM React SPA based on WKND content.",
   "main": "src/index.js",
-  "engines": {
-    "node": "^14 || ^16"
-  },
   "keywords": [
     "ecosystem:aio-app-builder-templates"
   ],
@@ -22,5 +20,18 @@
   },
   "scripts": {
     "test": "jest ./test"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe/generator-app-aem-react.git"
+  },
+  "author": "Adobe Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/adobe/generator-app-aem-react/issues"
+  },
+  "homepage": "https://github.com/adobe/generator-app-aem-react#readme"
 }

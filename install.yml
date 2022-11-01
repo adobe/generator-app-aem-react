@@ -12,7 +12,6 @@ $id: https://adobe.io/schemas/app-builder-templates/1
 
 categories:
   - ui
-  - helper-template
 
 extensions:
   - extensionPointId: aem/spa/1

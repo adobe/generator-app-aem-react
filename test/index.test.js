@@ -19,16 +19,3 @@ describe('prototype', () => {
     expect(require(theGeneratorPath).prototype).toBeInstanceOf(Generator)
   })
 })
-
-describe('run', () => {
-  test('test generator', async () => {
-    const options = { 
-      'dest-folder': 'my-template',
-      'project-name': 'my-project'
-    }
-
-    const ret = await helpers.run(theGeneratorPath)
-      .withOptions(options)
-    expect(ret).toBeDefined()
-  })
-})

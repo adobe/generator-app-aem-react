@@ -70,10 +70,10 @@ function AdventureListItem({title, slug, primaryImage, tripLength, price}) {
   }
   return (
         <li className="adventure-item">
-          {/* <Link to={`/adventure:${slug}`}>
-          </Link> */}
-          <img className="adventure-item-image" src={`${process.env.REACT_APP_HOST_URI}${primaryImage._path}`} 
-                alt={title}/>
+          <Link to={`/adventure:${slug}`}>
+            <img className="adventure-item-image" src={`${process.env.REACT_APP_HOST_URI}${primaryImage._path}`} 
+                  alt={title}/>
+          </Link>
           <div className="adventure-item-length-price">
             <div className="adventure-item-length">{tripLength}</div>
             <div className="adventure-item-price">

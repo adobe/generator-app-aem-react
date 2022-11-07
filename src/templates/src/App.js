@@ -29,11 +29,10 @@ function App() {
         </Link>
           <hr />
         </header>
-        <Home />
-        {/* <Routes>
+        <Routes>
           <Route path="/adventure:slug" element={<AdventureDetail />} />
           <Route path="/" element={<Home />} />
-        </Routes> */}
+        </Routes>
       </div>
     </Router>
   );

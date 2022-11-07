@@ -17,16 +17,13 @@ const { AEMHeadless } = require('@adobe/aem-headless-client-js');
 const {
     REACT_APP_HOST_URI,
     REACT_APP_GRAPHQL_ENDPOINT,
-    REACT_APP_USE_PROXY,
     REACT_APP_AUTH_METHOD,
     REACT_APP_DEV_TOKEN,
     REACT_APP_BASIC_AUTH_USER,
     REACT_APP_BASIC_AUTH_PASS
 } = process.env;
 
-// In a production application the serviceURL should be set to the production AEM Publish environment
-// In development the serviceURL can be set to '/' which will be a relative proxy is used (see ../authMethods.js) to avoid CORS issues
-const serviceURL = REACT_APP_USE_PROXY === 'true' ? '/' : REACT_APP_HOST_URI;
+const serviceURL = REACT_APP_HOST_URI;
 
 // Get authorization based on environment variables
 // authorization is not needed when connecting to Publish environments

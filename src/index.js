@@ -100,7 +100,7 @@ class AemSpaGenerator extends Generator {
       "react": "^16.13.1",
       "react-currency-format": "^1.1.0",
       "react-dom": "^16.13.1",
-      "react-router-dom": "^5.2.0",
+      "react-router-dom": "^6.3.0",
       "util": "^0.12.5"
     })
     utils.addDependencies(

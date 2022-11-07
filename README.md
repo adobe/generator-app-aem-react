@@ -1,49 +1,28 @@
-# Open Source Starter Repo
+<!--
+Copyright 2022 Adobe. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-This repository contains templates for project documentation, ensuring necessary
-legal and contributor documentation is explicit. All sections below in this `README.md`
-should be considered a template for a typical project `README.md`.
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+-->
 
-## PROJECT NAME
+# @adobe/generator-app-aem-react
 
-A short description of what this project does.
+[![Version](https://img.shields.io/npm/v/@adobe/generator-app-aem-react.svg)](https://npmjs.org/package/@adobe/generator-app-aem-react)
+[![Downloads/week](https://img.shields.io/npm/dw/@adobe/generator-app-aem-react.svg)](https://npmjs.org/package/@adobe/generator-app-aem-react)
+[![License](https://img.shields.io/npm/l/@adobe/generator-app-aem-react.svg)](https://github.com/adobe/generator-app-aem-react/blob/main/package.json)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/adobe/generator-app-aem-react/master.svg?style=flat-square)](https://codecov.io/gh/adobe/generator-app-aem-react/)
 
-## Goals
+App template for AEM React SPA based on WKND content.
 
-It is a good idea to provide a mission statement for your project, enshrining
-what the project wants to accomplish so that as more people join your project
-everyone can work in alignment.
-
-## Non-Goals
-
-It is also a good idea to declare what are _not_ goals of the project to prevent
-potential feature creep.
-
-### Installation
-
-Instructions for how to download/install the code onto your machine.
-
-Example:
-```
-npm install myProject --save
-```
-
-### Usage
-
-Usage instructions for your code.
-
-Example:
-
-```
-var myMod = require('mymodule');
-
-myMod.foo('hi');
-```
-
-### Contributing
+## Contributing
 
 Contributions are welcomed! Read the [Contributing Guide](./.github/CONTRIBUTING.md) for more information.
 
-### Licensing
+## Licensing
 
 This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.

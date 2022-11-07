@@ -14,6 +14,7 @@ governing permissions and limitations under the License.
 
 [![Version](https://img.shields.io/npm/v/@adobe/generator-app-aem-react.svg)](https://npmjs.org/package/@adobe/generator-app-aem-react)
 [![Downloads/week](https://img.shields.io/npm/dw/@adobe/generator-app-aem-react.svg)](https://npmjs.org/package/@adobe/generator-app-aem-react)
+[![Node.js CI](https://github.com/adobe/generator-app-aem-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/adobe/generator-app-aem-react/actions/workflows/node.js.yml)
 [![License](https://img.shields.io/npm/l/@adobe/generator-app-aem-react.svg)](https://github.com/adobe/generator-app-aem-react/blob/main/package.json)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/adobe/generator-app-aem-react/master.svg?style=flat-square)](https://codecov.io/gh/adobe/generator-app-aem-react/)
 

@@ -89,13 +89,7 @@ class AemSpaGenerator extends Generator {
 
     utils.addDependencies(this, {
       "@adobe/aem-headless-client-js": "^3.1.0",
-      "@adobe/aem-react-editable-components": "^1.1.6",
-      "@adobe/aem-spa-component-mapping": "^1.1.1",
-      "@adobe/aem-spa-page-model-manager": "^1.3.11",
-      "@adobe/aio-sdk": "^3.0.0",
       "buffer": "^6.0.3",
-      "node-sass": "^7.0.3",
-      "normalize-scss": "^7.0.1",
       "querystring-es3": "^0.2.1",
       "react": "^16.13.1",
       "react-currency-format": "^1.1.0",
@@ -113,7 +107,9 @@ class AemSpaGenerator extends Generator {
         "@parcel/packager-raw-url": "^2.7.0",
         "@parcel/transformer-sass": "^2.7.0",
         "@parcel/transformer-svg-react": "^2.0.1",
-        "@parcel/transformer-webmanifest": "^2.7.0"
+        "@parcel/transformer-webmanifest": "^2.7.0",
+        "node-sass": "^7.0.3",
+        "normalize-scss": "^7.0.1"
       },
       true
     )

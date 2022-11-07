@@ -13,13 +13,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-import { ModelManager } from "@adobe/aem-spa-page-model-manager";
-import CustomModelClient from "./CustomModelClient";
-
-// Initialize the ModelManager before invoking ReactDOM.render(...).
-const modelClient = new CustomModelClient(process.env.REACT_APP_HOST_URI);
-ModelManager.initializeAsync({modelClient});
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

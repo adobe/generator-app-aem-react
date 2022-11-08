@@ -26,3 +26,25 @@ afterEach(() => {
   stdout.stop()
   stderr.stop()
 })
+
+// quick normalization to test windows/unix paths
+global.n = p => path.normalize(p)
+global.r = p => path.resolve(p)
+
+global.assertDependencies = (fs, dependencies, devDependencies) => {
+  expect(JSON.parse(fs.readFileSync('package.json').toString())).toEqual(expect.objectContaining({
+    dependencies,
+    devDependencies
+  }))
+}
+
+global.assertNodeEngines = (fs, nodeEngines) => {
+  expect(JSON.parse(fs.readFileSync('package.json').toString())).toEqual(expect.objectContaining({
+    engines: { node: nodeEngines }
+  }))
+}
+global.basicGeneratorOptions = {
+  'action-folder': 'actions',
+  'config-path': 'ext.config.yaml',
+  'full-key-to-manifest': 'runtimeManifest'
+}

@@ -11,7 +11,6 @@ governing permissions and limitations under the License.
 
 const Generator = require('yeoman-generator')
 const path = require('path')
-const upath = require('upath')
 
 const { utils } = require('@adobe/generator-app-common-lib')
 
@@ -32,11 +31,7 @@ class AemSpaGenerator extends Generator {
   }
 
   async initializing () {
-    // all paths are relative to root
-    this.extFolder = 'src/aem-spa-1'
-    this.webSrcFolder = path.join(this.extFolder, 'web-src')
-    this.extConfigPath = path.join(this.extFolder, 'ext.config.yaml')
-    this.configName = 'aem/spa/1'
+    this.webSrcFolder = 'web-src'
 
     // props are used by templates
     this.props = {
@@ -45,34 +40,9 @@ class AemSpaGenerator extends Generator {
   }
 
   async writing () {
-    const unixExtConfigPath = upath.toUnix(this.extConfigPath)
-    // add the extension point config in root
-    utils.writeKeyAppConfig(
-      this,
-      // key
-      'extensions.' + this.configName,
-      // value
-      {
-        // posix separator
-
-        $include: unixExtConfigPath
-      }
-    )
-
-    // add extension point operation
-    utils.writeKeyYAMLConfig(
-      this,
-      this.extConfigPath,
-      // key
-      'operations', {
-        view: [
-          { type: 'web', impl: 'index.html' }
-        ]
-      }
-    )
-
-    // add web-src path, relative to config file
-    utils.writeKeyYAMLConfig(this, this.extConfigPath, 'web', path.relative(this.extFolder, this.webSrcFolder))
+    // const unixExtConfigPath = upath.toUnix(this.extConfigPath)
+    // add the web src to app config
+    utils.writeKeyAppConfig(this, 'application.web', this.webSrcFolder)
 
     // add web-src folder
     const destFolder = this.webSrcFolder
@@ -90,6 +60,7 @@ class AemSpaGenerator extends Generator {
     utils.addDependencies(this, {
       "@adobe/aem-headless-client-js": "^3.1.0",
       "buffer": "^6.0.3",
+      "process": "^0.11.10",
       "querystring-es3": "^0.2.1",
       "react": "^16.13.1",
       "react-currency-format": "^1.1.0",

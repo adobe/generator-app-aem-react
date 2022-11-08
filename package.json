@@ -1,6 +1,6 @@
 {
   "name": "@adobe/generator-app-aem-react",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.4",
   "description": "Template for AEM React SPA based on WKND content.",
   "main": "src/index.js",
   "keywords": [

@@ -40,7 +40,6 @@ class AemSpaGenerator extends Generator {
   }
 
   async writing () {
-    // const unixExtConfigPath = upath.toUnix(this.extConfigPath)
     // add the web src to app config
     utils.writeKeyAppConfig(this, 'application.web', this.webSrcFolder)
 
